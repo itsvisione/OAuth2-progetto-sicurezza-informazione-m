@@ -1,5 +1,7 @@
 # OAuth2-progetto-sicurezza-informazione-m
 
+<img width="1151" height="830" alt="Image" src="https://github.com/user-attachments/assets/483c02cc-7a14-452a-9d61-20ad993ce0c8" />
+
 Questo piccolo progetto realizza una semplice interfaccia di login federato tramite il protocollo OAuth2, usando l’accesso con Google come metodo di autenticazione.
 
 La web app si compone di un server node.js, realizzato con Express, e sfrutta il modulo passport.js, un middleware che consente di integrare facilmente OAuth2.
