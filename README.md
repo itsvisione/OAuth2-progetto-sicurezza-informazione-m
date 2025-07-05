@@ -6,20 +6,6 @@ Questo piccolo progetto realizza una semplice interfaccia di login federato tram
 
 La web app si compone di un server node.js, realizzato con Express, e sfrutta il modulo passport.js, un middleware che consente di integrare facilmente OAuth2.
 
-La struttura del progetto è la seguente
-
-oauth2-node-demo
-|
-|— package.json
-|— server.js
-|
-|- public
-     |- syles.css
-|
-|— views/
-     |— index.html
-     |- styles.css
-
 All’interno di server.js risiede l’intera logica del programma. Inizialmente si importano i moduli necessari (express, express-session, passport, passport-google-oauth20) e la Strategy di Google per l’autenticazione.
 
 Si inizializza quindi passport: i metodi serializeUser e deserializeUser consentono di fare save e retrieve dei dati dell’utente nella/dalla sessione. Il metodo use predispone la Strategy da usare e definisce la funzione callback di verifica, che viene chiamata ogni volta che si esegue l’autenticazione e restituisce le informazioni all’utente, attraverso un accessToken (generato da Google dopo l’autenticazione).
